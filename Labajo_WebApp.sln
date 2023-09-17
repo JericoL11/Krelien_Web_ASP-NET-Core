@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34009.444
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Labajo_WebApp", "Labajo_WebApp\Labajo_WebApp.csproj", "{234CA02C-693D-4493-9865-40A5E217AA6B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{234CA02C-693D-4493-9865-40A5E217AA6B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{234CA02C-693D-4493-9865-40A5E217AA6B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{234CA02C-693D-4493-9865-40A5E217AA6B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{234CA02C-693D-4493-9865-40A5E217AA6B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7E8D1F0A-49C1-4E23-A6F0-80ED7E9C6804}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,64 @@
+html {
+  font-size: 14px;
+
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+
+  }
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+
+}
+
+body {
+  margin-bottom: 60px;
+  background-color:rgba(0,0,0,0.1);
+}
+#image_border {
+    /*x-off y-off blur spread color*/
+    box-shadow:0px 0px 50px 0px rgba(0,0,255,0.3);
+    border-radius:10px;
+    transition:0.5s;
+    filter:grayscale(30%);
+}
+#image_border:hover{
+    filter:none;
+}
+/*#tagline{
+    color:rgb(255, 255, 255);
+    transition: 0.2s;
+    cursor:default;
+}
+ #tagline:hover{
+     color:gold;
+   font-size:65px;
+  }*/
+#icons {
+    width: 7rem;
+    height: 3rem;
+}
+
+#icons_product {
+    width: 10rem;
+    height: 8rem;
+
+}
+
+/*Carousel*/
+.c_item{
+height:25rem;
+}
+.c_img {
+    height: 100%;
+    object-fit: cover
+}
+.product-size {
+    width: 12rem;
+    height: 10rem;
+}

@@ -1,0 +1,111 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}   
+
+@* <div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
+ *@
+ 
+ 
+
+ @*Carousel*@
+    <div id="carouselExampleCaptions" class="carousel slide carousel" data-bs-ride="false">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+        <div class="carousel-item active c_item">
+                <img src="~/images/homeWallpaper.jpg" class="d-block w-100 c_img" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>First slide label</h5>
+                    <p>Some representative placeholder content for the first slide.</p>
+                </div>
+            </div>
+        <div class="carousel-item c_item">
+            <img src="~/images/homeWallpaper.jpg" class="d-block w-100 c_img" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Second slide label</h5>
+                    <p>Some representative placeholder content for the second slide.</p>
+                </div>
+            </div>
+        <div class="carousel-item c_item">
+            <img src="~/images/homeWallpaper.jpg" class="d-block w-100 c_img" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Third slide label</h5>
+                    <p>Some representative placeholder content for the third slide.</p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    @*TAG LINE*@
+<article id="Home">
+
+
+    <div class="container-fluid my-5">
+        <div class="row justify-content-center">
+            <div class="col-lg-6 col-sm-12 mt-5">           
+                <div id="image_border"><img src="~/images/homeWallpaper.jpg" class="img-fluid rounded-3 " /></div>
+            </div>
+            <div class="col-lg-6 col-md-12  col-sm-12 justify-conten-sm-start">
+                <p id="tagline" class="display-3 fw-bold ps-5 mt-5 text-sm-start">Where Performance Meets Affordability.</p>
+            </div>
+        </div>
+    </div>
+ <hr class="mt-3"/>
+
+</article>
+
+ @* Tech logos *@
+<div class="container-fluid mb-5 ">
+    <div class="row mb-5 justify-content-center justify-content-lg-between justify-content-md-between">
+        <div class="col-sm-1 col-lg-2 mb-5 mt-5 mx-2" id="icons">
+            <a class="text-dark fw-bold" asp-area="" asp-page="/MyPages/laptops">
+            <img src="~/images/laptop.png" class="img-fluid" />
+            </a>
+            <p class="my-2 text-black text-center">LAPTOP</p>
+        </div>
+
+
+        <div class=" col-sm-1 col-lg-2 mb-5 mt-5 mx-2" id="icons">
+            <a class="text-dark fw-bold" asp-area="" asp-page="/MyPages/Desktop">
+            <img src="~/images/pc.png" class="img-fluid" /> 
+            </a>
+            <p class="my-2 text-black text-center">DESKTOP</p>
+           
+           
+        </div>
+       
+        <div class="col-sm-1 col-lg-2 mb-5 mt-5 mx-2" id="icons">
+            <a class="text-dark fw-bold" asp-area="" asp-page="/MyPages/Monitor">
+                <img src="~/images/monitor.png" class="img-fluid" />
+            </a>
+            <p class="my-2 text-black text-center">MONITOR</p>
+            </div>
+
+        <div class="col-sm-1 col-lg-2 mb-5 mt-5 mx-2" id="icons">
+            <a class="text-dark fw-bold" asp-area="" asp-page="/MyPages/Printer">
+                <img src="~/images/printing.png" class="img-fluid" />
+            </a>
+            <p class="my-2 text-black text-center">PRINTER</p>
+            </div>
+    </div>
+    </div>
+
+<br />
+
+
