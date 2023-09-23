@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Labajo_WebApp.Pages.MyPages;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
 namespace Labajo_WebApp.Pages
@@ -16,5 +17,6 @@ namespace Labajo_WebApp.Pages
         {
 
         }
+ 
     }
 }

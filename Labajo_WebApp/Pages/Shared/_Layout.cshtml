@@ -31,22 +31,37 @@
                         <li class="nav-item">
                             <a class="nav-link text-white fw-bold" asp-area="" asp-page="/Index">Home</a>
                         </li>
-                        <li class="nav-item">
+                       @*  <li class="nav-item">
                             <a class="nav-link text-white fw-bold" asp-area="" asp-page="/Privacy">Privacy</a>
-                        </li>
+                        </li> *@
+                        
                         @*Products Dropdown*@
                         <li class="nav-item dropdown">
                             <a class="nav-link text-white fw-bold dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 Products
                             </a>
                             <ul class="dropdown-menu dropdown-menu-white">
+                                <li><a class="dropdown-item nav-link text-dark fw-bold" asp-area=""  asp-page="/MyPages/Products">All Products</a></li>
                                 <li><a class="dropdown-item nav-link text-dark fw-bold" asp-area=""  asp-page="/MyPages/laptops">Laptops</a></li>
                                 <li><a class="dropdown-item nav-link text-dark fw-bold" asp-area=""  asp-page="/MyPages/Desktop">Desktop</a></li>
                                 <li><a class="dropdown-item nav-link text-dark fw-bold" asp-area="" asp-page="/MyPages/Monitor">Monitors</a></li>
                                 <li><a class="dropdown-item nav-link text-dark fw-bold" asp-area="" asp-page="/MyPages/Printer">Printer</a></li>
-
                             </ul>
-                        </li> 
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white fw-bold" asp-area="" asp-page="/Privacy">Login</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white fw-bold" asp-area="" asp-page="/Privacy">Register</a>
+                        </li>
+
+                        <!-- SEARCH BAR-->
+                       <!--   <li class="nav-item">
+                            <form>
+                                <input id="search-input" class="mt-1 search-bar" type="text" placeholder="Seach"/>  
+                            </form>
+                                <button type="submit" id="btn-search" onlick="searchImage()" class="btn btn-success text-white">Search</button>                        
+                        </li> -->
                     </ul>
                 </div>
             </div>

@@ -3,10 +3,5 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 
 namespace Labajo_WebApp.Pages.MyPages.ViewImage.Laptop
 {
-    public class GalaxyG7Model : PageModel
-    {
-        public void OnGet()
-        {
-        }
-    }
+
 }

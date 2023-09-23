@@ -30,19 +30,14 @@ body {
 #image_border:hover{
     filter:none;
 }
-/*#tagline{
-    color:rgb(255, 255, 255);
-    transition: 0.2s;
-    cursor:default;
-}
- #tagline:hover{
-     color:gold;
-   font-size:65px;
-  }*/
 #icons {
     width: 7rem;
     height: 3rem;
+    transition:all 0.4s;
 }
+#icons:hover {
+    transform: scale(1.05);
+    }
 
 #icons_product {
     width: 10rem;
@@ -52,13 +47,44 @@ body {
 
 /*Carousel*/
 .c_item{
-height:25rem;
+height:100%;
 }
 .c_img {
     height: 100%;
-    object-fit: cover
+    object-fit: contain;
 }
 .product-size {
     width: 12rem;
     height: 10rem;
 }
+
+.search-bar {
+    width: 100%;
+    height: 36px;
+    padding: 10px;
+    padding-left: 20px;
+    display: inline;
+    border-start-start-radius: 20px;
+    border-end-end-radius: 20px;
+    outline-color: seagreen;
+    border: none;
+}
+#btn-search {
+    width:100%;
+    border-end-end-radius:20px;
+}
+.card{  
+    transition: all 0.4s;
+  
+}  
+.card:hover {
+    box-shadow: 0px 0px 10px 1px #0026ff inset;
+}
+
+ .hide-text{
+     font-size:2px;
+     visibility:hidden;
+     display:block;
+     scroll-margin-bottom:0;
+ }
+ 

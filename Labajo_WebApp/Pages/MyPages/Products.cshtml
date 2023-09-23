@@ -1,0 +1,711 @@
+﻿@page
+@model Labajo_WebApp.Pages.MyPages.ProductsModel
+
+<!--TO DO
+        REMOVE THE BUTTON, CHANGED IT INTO A LABEL AND THE LABEL OF EACH PROUCT ALSO    
+        MERGED ALL THE PRODUCT AND AUTO ARRANGEMENT ON SEARCH
+       
+-->
+<div class="container">
+    <div class="row row-cols-lg-1" >
+
+            <p class="display-6 fw-bold text-capitalize text-success d-inline ">Search Product</p>
+            <form> 
+                <input id="find" class="search-bar box-shadow" type="text" placeholder="Search" onkeyup="search()" />
+            </form>
+   
+    </div> 
+</div> 
+    <div id="Product-List">
+    <!--LAPTOP -->
+    <div class="container my-5">
+        <div class="row row-cols-lg-3 row-cols-md-2 g-2">
+            <div class="card border-3">
+                    <div class="text-center mt-3">
+                    <p class="lead fw-bold"><span class="hide-text">LAPTOP</span> Galaxy T5</p>
+                    </div>
+                    <div class="card-body text-center">
+                        <a class="text-dark fw-bold" asp-area="" asp-page="/MyPages/Product-ViewImage/Laptop/GalaxyG7">
+                            <img src="~/images/Laptop/GALAXY T5.png" class="img-fluid mb-3 shadow product-size" />
+                        </a>
+                        <p class="Lead fw-bold my-2">&#8369; 42,000.00</p>
+                        <!-- Button trigger modal -->
+                        <div class="row justify-content-between px-2 py-2">
+                            <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                View Specs
+                            </button>
+
+                            <!-- Normal Button -->
+                            <button type="button" class="btn btn-outline-primary mt-2">
+                                Add to Cart
+
+                            </button>
+                            <button type="button" class="btn btn-outline-primary mt-2">
+                                Buy Now!
+                            </button>
+                        </div>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-scrollable">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel">GALAXY T5</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+
+                                    <div class="modal-body">
+                                        <img src="~/images/Laptop/GALAXY T5-SPECS.png" class="img-fluid" />
+
+                                    </div>
+
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+          
+                <div class="card border-3">
+                    <div class="text-center mt-3">
+                    <p class="lead fw-bold"><span class="hide-text">LAPTOP</span>LIGHT MV5</p>
+
+                    </div>
+                    <div class="card-body text-center">
+                        <a class="text-dark fw-bold" asp-area="" asp-page="/MyPages/Product-ViewImage/Laptop/Light">
+                            <img src="~/images/Laptop/KEY _LIGHT_ MV5.png" class="img-fluid mb-3 shadow product-size" />
+                        </a>
+                        <p class="Lead fw-bold my-2">&#8369; 68,999.00</p>
+
+                        <!-- Button trigger modal -->
+                        <div class="row justify-content-between px-2 py-2">
+                            <div class=""></div>
+                            <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#exampleModal2">
+                                View Specs
+                            </button>
+
+                            <!-- Normal Button -->
+                            <button type="button" class="btn btn-outline-primary mt-2">
+                                Add to Cart
+
+                            </button>
+                            <button type="button" class="btn btn-outline-primary mt-2">
+                                Buy Now!
+                            </button>
+                        </div>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-scrollable">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel">LIGHT MV5</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+
+                                    <div class="modal-body">
+                                        <img src="~/images/Laptop/mv5-specs.png" class="img-fluid" />
+
+                                    </div>
+
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+          
+                <div class="card border-3">
+                    <div class="text-center mt-3">
+                    <p class="lead fw-bold"><span class="hide-text">LAPTOP</span>NITMO G7</p>
+                    </div>
+                    <div class="card-body text-center">
+                        <a class="text-dark fw-bold" asp-area="" asp-page="/MyPages/Product-ViewImage/Laptop/NitmoG7">
+                            <img src="~/images/Laptop/NITMO G7.png" class="img-fluid mb-3 shadow product-size" />
+                        </a>
+                        <p class="Lead fw-bold my-2">&#8369; 65,950.00</p>
+                        <!-- Button trigger modal -->
+                        <div class="row justify-content-between px-2 py-2">
+                            <div class=""></div>
+                            <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#exampleModal3">
+                                View Specs
+                            </button>
+
+                            <!-- Normal Button -->
+                            <button type="button" class="btn btn-outline-primary mt-2">
+                                Add to Cart
+
+                            </button>
+                            <button type="button" class="btn btn-outline-primary mt-2">
+                                Buy Now!
+                            </button>
+                        </div>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-scrollable">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel">NITMO G7</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+
+                                    <div class="modal-body">
+                                        <img src="~/images/Laptop/NITMO G7-Specs.png" class="img-fluid" />
+
+                                    </div>
+
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+           
+                <div class="card border-3">
+                    <div class="text-center mt-3">
+                    <p class="lead fw-bold"> <span class="hide-text">LAPTOP</span> WOLF SPEED</p>
+                       
+
+                    </div>
+                    <div class="card-body text-center">
+                        <a class="text-dark fw-bold" asp-area="" asp-page="/MyPages/Product-ViewImage/Laptop/WolfSpeed">
+                            <img src="~/images/Laptop/WOLF SPEED.png" class="img-fluid mb-3 shadow product-size" />
+                        </a>
+                        <p class="Lead fw-bold my-2">&#8369; 62,999.00</p>
+                        <!-- Button trigger modal -->
+                        <div class="row justify-content-between px-2 py-2">
+
+                            <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#exampleModal4">
+                                View Specs
+                            </button>
+
+                            <!-- Normal Button -->
+
+                            <button type="button" class="btn btn-outline-primary mt-2"> Add to Cart </button>
+                            <button type="button" class="btn btn-outline-primary mt-2">Buy Now!</button>
+
+                        </div>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModal4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-scrollable">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel">WOLF SPEED</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+
+                                    <div class="modal-body">
+                                        <img src="~/images/Laptop/WOLF SPEED-Specs.png" class="img-fluid" />
+
+                                    </div>
+
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            <!--DESKTOP -->
+                <div class="card border-3">
+                    <div class="text-center mt-3">
+                    <p class="lead fw-bold"><span class="hide-text">DESKTOP</span>KL-BOOST</p>
+                    </div>
+                    <div class="card-body text-center">
+                        <a class="text-dark fw-bold" asp-area="" asp-page="/MyPages/Product-ViewImage/Desktop/V-Boost">
+                            <img src="~/images/Desktop/KRELIEN BOOST.png" class="img-fluid mb-3 product-size" />
+                        </a>
+                        <p class="Lead fw-bold my-2">&#8369; 12,000.00</p>
+                        <!-- Button trigger modal -->
+                        <div class="row justify-content-between px-2 py-2">
+                            <div class=""></div>
+                            <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#exampleModalD1">
+                                View Specs
+                            </button>
+
+                            <!-- Normal Button -->
+                            <button type="button" class="btn btn-outline-primary mt-2">
+                                Add to Cart
+
+                            </button>
+                            <button type="button" class="btn btn-outline-primary mt-2">
+                                Buy Now!
+                            </button>
+                        </div>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModalD1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-scrollable">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel">KL-BOOST</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+
+                                    <div class="modal-body">
+                                        <img src="~/images/Desktop/BOOST-SPECS.png" class="img-fluid" />
+
+                                    </div>
+
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+          
+
+         
+
+                <div class="card border-3">
+                    <div class="text-center mt-3">
+                    <p class="lead fw-bold"><span class="hide-text">DESKTOP</span>KL-HOME T3</p>
+                    </div>
+                    <div class="card-body text-center">
+                        <a class="text-dark fw-bold" asp-area="" asp-page="/MyPages/Product-ViewImage/Desktop/V-HomeT3">
+                            <img src="~/images/Desktop/KRELIEN HOME T3.png" class="img-fluid mb-3 product-size" />
+                        </a>
+                        <p class="Lead fw-bold my-2">&#8369; 9,000.00</p>
+                        <!-- Button trigger modal -->
+                        <div class="row justify-content-between px-2 py-2">
+                            <div class=""></div>
+                            <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#exampleModalD2">
+                                View Specs
+                            </button>
+
+                            <!-- Normal Button -->
+                            <button type="button" class="btn btn-outline-primary mt-2">
+                                Add to Cart
+
+                            </button>
+                            <button type="button" class="btn btn-outline-primary mt-2">
+                                Buy Now!
+                            </button>
+                        </div>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModalD2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-scrollable">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel">KL-HOME T3</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+
+                                    <div class="modal-body">
+                                        <img src="~/images/Desktop/HOME-SPECS.png" class="img-fluid" />
+
+                                    </div>
+
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="card border-3">
+                    <div class="text-center mt-3">
+                    <p class="lead fw-bold"><span class="hide-text">DESKTOP</span>KRELIEN G3</p>
+                    </div>
+                    <div class="card-body text-center">
+                        <a class="text-dark fw-bold" asp-area="" asp-page="/MyPages/Product-ViewImage/Desktop/V-KR-G3">
+                            <img src="~/images/Desktop/KRELIEN_G3.png" class="img-fluid mb-3 product-size" />
+                        </a>
+                        <p class="Lead fw-bold my-2">&#8369; 8,000.00</p>
+                        <!-- Button trigger modal -->
+                        <div class="row justify-content-between px-2 py-2">
+                            <div class=""></div>
+                            <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#exampleModalD3">
+                                View Specs
+                            </button>
+
+                            <!-- Normal Button -->
+                            <button type="button" class="btn btn-outline-primary mt-2">
+                                Add to Cart
+
+                            </button>
+                            <button type="button" class="btn btn-outline-primary mt-2">
+                                Buy Now!
+                            </button>
+                        </div>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModalD3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-scrollable">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel">KRELIEN G3</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+
+                                    <div class="modal-body">
+                                        <img src="~/images/Desktop/G3-SPECS.png" class="img-fluid" />
+
+                                    </div>
+
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+         
+                <div class="card border-3">
+                    <div class="text-center mt-3">
+                    <p class="lead fw-bold"><span class="hide-text">DESKTOP</span>KRELIEN PC-PT</p>
+                    </div>
+                    <div class="card-body text-center">
+                        <a class="text-dark fw-bold" asp-area="" asp-page="/MyPages/Product-ViewImage/Desktop/V-PCPT">
+                            <img src="~/images/Desktop/KRELIEN_PC-PT.png" class="img-fluid mb-3 product-size" />
+                        </a>
+                        <p class="Lead fw-bold my-2">&#8369; 7,500.00</p>
+                        <!-- Button trigger modal -->
+                        <div class="row justify-content-between px-2 py-2">
+
+                            <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#exampleModalD4">
+                                View Specs
+                            </button>
+
+                            <!-- Normal Button -->
+
+                            <button type="button" class="btn btn-outline-primary mt-2"> Add to Cart </button>
+                            <button type="button" class="btn btn-outline-primary mt-2">Buy Now!</button>
+
+                        </div>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModalD4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-scrollable">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel">KRELIEN PC-PT</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+
+                                    <div class="modal-body">
+                                        <img src="~/images/Desktop/PC-PT-SPECS.png" class="img-fluid" />
+
+                                    </div>
+
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+             </div>
+        
+            <!-- MONITORS -->
+
+                    <div class="card border-3">
+                        <div class="text-center mt-3">
+                    <p class="lead fw-bold"><span class="hide-text">MONITOR</span>AVANGE</p>
+                        </div>
+                        <div class="card-body text-center">
+                        <a class="text-dark fw-bold" asp-area="" asp-page="/MyPages/Product-ViewImage/Monitor/V-Avenge">
+                                <img src="~/images/Monitor/AVANGE.png" class="img-fluid mb-3 product-size" />
+                            </a>
+                            <p class="Lead fw-bold my-2">&#8369; 24,300.00</p>
+                            <!-- Button trigger modal -->
+                            <div class="row justify-content-between px-2 py-2">
+                                <div class=""></div>
+                                <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#exampleModalM1">
+                                    View Specs
+                                </button>
+
+                                <!-- Normal Button -->
+                                <button type="button" class="btn btn-outline-primary mt-2">
+                                    Add to Cart
+
+                                </button>
+                                <button type="button" class="btn btn-outline-primary mt-2">
+                                    Buy Now!
+                                </button>
+                            </div>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModalM1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-scrollable">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLabel">AVANGE</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+
+                                        <div class="modal-body">
+                                            <img src="~/images/Monitor/AVANGE - specs.png" class="img-fluid" />
+
+                                        </div>
+
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                <div class="card border-3">
+                    <div class="text-center mt-3">
+                    <p class="lead fw-bold"><span class="hide-text">MONITOR</span>KRELIEN GT</p>
+                    </div>
+                    <div class="card-body text-center">
+                        <a class="text-dark fw-bold" asp-area="" asp-page="/MyPages/Product-ViewImage/Monitor/V-GT">
+                            <img src="~/images/Monitor/KRELIEN_GT_MONITOR.png" class="img-fluid mb-3 product-size" />
+                        </a>
+                        <p class="Lead fw-bold my-2">&#8369; 22,990.00</p>
+                        <!-- Button trigger modal -->
+                        <div class="row justify-content-between px-2 py-2">
+                            <div class=""></div>
+                            <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#exampleModalM2">
+                                View Specs
+                            </button>
+
+                            <!-- Normal Button -->
+                            <button type="button" class="btn btn-outline-primary mt-2">
+                                Add to Cart
+
+                            </button>
+                            <button type="button" class="btn btn-outline-primary mt-2">
+                                Buy Now!
+                            </button>
+                        </div>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModalM2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-scrollable">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel">KRELIEN GT</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+
+                                    <div class="modal-body">
+                                        <img src="~/images/Monitor/gt-specs.png" class="img-fluid" />
+
+                                    </div>
+
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card border-3">
+                    <div class="text-center mt-3">
+                    <p class="lead fw-bold"><span class="hide-text">MONITOR</span>NAVI ULTRA</p>
+                    </div>
+                    <div class="card-body text-center">
+                        <a class="text-dark fw-bold" asp-area="" asp-page="/MyPages/Product-ViewImage/Monitor/V-Navi-Ultra">
+                            <img src="~/images/Monitor/NAVI ULTRA.png" class="img-fluid mb-3 product-size" />
+                        </a>
+                        <p class="Lead fw-bold my-2">&#8369; 25,000.00</p>
+                        <!-- Button trigger modal -->
+                        <div class="row justify-content-between px-2 py-2">
+                            <div class=""></div>
+                            <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#exampleModalM3">
+                                View Specs
+                            </button>
+
+                            <!-- Normal Button -->
+                            <button type="button" class="btn btn-outline-primary mt-2">
+                                Add to Cart
+
+                            </button>
+                            <button type="button" class="btn btn-outline-primary mt-2">
+                                Buy Now!
+                            </button>
+                        </div>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModalM3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-scrollable">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel">NAVI ULTRA</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+
+                                    <div class="modal-body">
+                                        <img src="~/images/Monitor/NAVI ULTRA-Specs.png" class="img-fluid" />
+
+                                    </div>
+
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card border-3-">
+                    <div class="text-center mt-3">
+                    <p class="lead fw-bold"><span class="hide-text">MONITOR</span>OWL R3</p>
+                    </div>
+                    <div class="card-body text-center">
+                        <a class="text-dark fw-bold" asp-area="" asp-page="/MyPages/Product-ViewImage/Monitor/V-OwlR3">
+                            <img src="~/images/Monitor/OWL R3.png" class="img-fluid mb-3 product-size" />
+                        </a>
+                        <p class="Lead fw-bold my-2">&#8369; 22,500.00</p>
+                        <!-- Button trigger modal -->   
+                        <div class="row justify-content-between px-2 py-2">
+
+                            <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#exampleModalM4">
+                                View Specs
+                            </button>
+
+                            <!-- Normal Button -->
+
+                            <button type="button" class="btn btn-outline-primary mt-2"> Add to Cart </button>
+                            <button type="button" class="btn btn-outline-primary mt-2">Buy Now!</button>
+
+                        </div>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModalM4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-scrollable">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel">OWL R3</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+
+                                    <div class="modal-body">
+                                        <img src="~/images/Monitor/OWL R3-specs.png" class="img-fluid" />
+
+                                    </div>
+
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
+
+            <!-- PRINTER-->
+                <div class="card border-3">
+                    <div class="text-center mt-3">
+                    <p class="lead fw-bold"><span class="hide-text">PRINTER</span>KRELIEN PRINTER L320</p>
+                    </div>
+                    <div class="card-body text-center">
+                        <a class="text-dark fw-bold" asp-area="" asp-page="/MyPages/Product-ViewImage/Printer/V-P-L320">
+                            <img src="~/images/Printer/L320.png" class="img-fluid mb-3 product-size" />
+                        </a>
+                        <p class="Lead fw-bold my-2">&#8369; 14,500.00</p>
+
+                        <!-- Button trigger modal -->
+                        <div class="row justify-content-between px-2 py-2">
+                            <div class=""></div>
+                            <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#exampleModalP1">
+                                View Specs
+                            </button>
+
+                            <!-- Normal Button -->
+                            <button type="button" class="btn btn-outline-primary mt-2">
+                                Add to Cart
+
+                            </button>
+                            <button type="button" class="btn btn-outline-primary mt-2">
+                                Buy Now!
+                            </button>
+                        </div>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModalP1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-scrollable">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel">KRELIEN PRINTER L320</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+
+                                    <div class="modal-body">
+                                        <img src="~/images/Printer/L320 -specs.png" class="img-fluid" />
+
+                                    </div>
+
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+          
+                <div class="card border-3">
+                    <div class="text-center mt-3">
+                    <p class="lead fw-bold"><span class="hide-text">PRINTER</span>KRELIEN PRINTER MV-0320</p>
+                    </div>
+                    <div class="card-body text-center">
+                        <a class="text-dark fw-bold" asp-area="" asp-page="/MyPages/Product-ViewImage/Printer/V-P-0320">
+                            <img src="~/images/Printer/MY0320.png" class="img-fluid mb-3 product-size" />
+                        </a>
+                        <p class="Lead fw-bold my-2">&#8369; 15,300.00</p>
+
+                        <!-- Button trigger modal -->
+                        <div class="row justify-content-between px-2 py-2">
+                            <div class=""></div>
+                            <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#exampleModalP2">
+                                View Specs
+                            </button>
+
+                            <!-- Normal Button -->
+                            <button type="button" class="btn btn-outline-primary mt-2">
+                                Add to Cart
+
+                            </button>
+                            <button type="button" class="btn btn-outline-primary mt-2">
+                                Buy Now!
+                            </button>
+                        </div>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModalP2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-scrollable">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel">KRELIEN PRINTER MV-0320</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+
+                                    <div class="modal-body">
+                                        <img src="~/images/Printer/MY0320-SPECS.png" class="img-fluid" />
+
+                                    </div>
+
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                     </div>
+                </div>
+        </div>
+    </div>  
+</div>

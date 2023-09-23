@@ -1,46 +1,7 @@
 ﻿@page
 @model laptopsModel
 @{
-    // @* Laptops *@
-    // <div id="bg_laptop">
-    //         <hr />
-    //         <div class="container-fluid my-5 p-5">
-
-    //             <p class="display-2 text-black text-center">LAPTOPS</p>
-    //             <div class="row my-5 justify-content-center justify-content-lg-between">
-    //                 <div class="col-sm-3 col-md-3 col-lg-2 mb-5 mt-5 mx-2 shadow" id="icons_product">
-    //                     <a href="#">
-    //                         <img src="~/images/Laptop/GALAXY T5.png" class=" hover-zoom img-fluid " />
-    //                     </a>
-    //                     <p class="my-5 pt-3 text-black text-center">GALAXY T5</p>
-    //                 </div>
-
-
-    //                 <div class="col-sm-3 col-md-3  col-lg-2 mb-5 mt-5 mx-2 shadow" id="icons_product">
-    //                     <a href="#">
-    //                         <img src="~/images/Laptop/KEY _LIGHT_ MV5.png" class="img-fluid" />
-    //                     </a>
-    //                     <p class="my-4 text-black text-center">LIGHT MV5</p>
-
-
-    //                 </div>
-
-    //                 <div class="col-sm-3 col-md-3  col-lg-2 mb-5 mt-5 mx-2 shadow" id="icons_product">
-    //                     <a href="#">
-    //                         <img src="~/images/Laptop/NITMO G7.png" class="img-fluid" />
-    //                     </a>
-    //                     <p class="my-4 text-black text-center">NITMO G7</p>
-    //                 </div>
-
-    //                 <div class="col-sm-3 col-md-3 col-lg-2 mb-5 mt-5 mx-2 shadow rounded" id="icons_product">
-    //                     <a href="#">
-    //                         <img src="~/images/Laptop/WOLF SPEED.png" class="img-fluid" />
-    //                     </a>
-    //                     <p class="my-5 text-black text-center">WOLF SPEED</p>
-    //                 </div>
-    //             </div>
-    //       </div>
-
+    <div class="display-3 fw-bold text-center py-1">LAPTOP</div>
 
             @*laptop*@
     <div class="container my-5">
@@ -54,9 +15,9 @@
                                      <a class="text-dark fw-bold" asp-area="" asp-page="/MyPages/ViewImage/Laptop/GalaxyG7">
                                         <img src="~/images/Laptop/GALAXY T5.png" class="img-fluid mb-3 shadow product-size" /> 
                                      </a>
+                        <p class="Lead fw-bold my-2">&#8369; 42,000.00</p>
                          <!-- Button trigger modal -->
                                 <div class="row justify-content-between px-2 py-2">
-                                <div class=""></div>
                                      <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
                                        View Specs
                                       </button>
@@ -103,10 +64,12 @@
                         <a class="text-dark fw-bold" asp-area="" asp-page="/MyPages/ViewImage/Laptop/Light">
                             <img src="~/images/Laptop/KEY _LIGHT_ MV5.png" class="img-fluid mb-3 shadow product-size" />
                         </a>
+                        <p class="Lead fw-bold my-2">&#8369; 68,999.00</p>
+
                         <!-- Button trigger modal -->
                         <div class="row justify-content-between px-2 py-2">
                             <div class=""></div>
-                            <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#exampleModal2">
                                 View Specs
                             </button>
 
@@ -121,16 +84,16 @@
                         </div>
 
                         <!-- Modal -->
-                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                             <div class="modal-dialog modal-dialog-scrollable">
                                 <div class="modal-content">
                                     <div class="modal-header">
-                                        <h5 class="modal-title" id="exampleModalLabel">GALAXY T5</h5>
+                                        <h5 class="modal-title" id="exampleModalLabel">LIGHT MV5</h5>
                                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                     </div>
 
                                     <div class="modal-body">
-                                        <img src="~/images/Laptop/GALAXY T5-SPECS.png" class="img-fluid" />
+                                        <img src="~/images/Laptop/mv5-specs.png" class="img-fluid" />
 
                                     </div>
 
@@ -152,10 +115,11 @@
                             <a class="text-dark fw-bold" asp-area="" asp-page="/MyPages/ViewImage/Laptop/NitmoG7">
                             <img src="~/images/Laptop/NITMO G7.png" class="img-fluid mb-3 shadow product-size" />
                             </a>
+                        <p class="Lead fw-bold my-2">&#8369; 65,950.00</p>
                             <!-- Button trigger modal -->
                             <div class="row justify-content-between px-2 py-2">
                                 <div class=""></div>
-                                <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#exampleModal3">
                                     View Specs
                                 </button>
 
@@ -170,16 +134,16 @@
                             </div>
 
                             <!-- Modal -->
-                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                                 <div class="modal-dialog modal-dialog-scrollable">
                                     <div class="modal-content">
                                         <div class="modal-header">
-                                            <h5 class="modal-title" id="exampleModalLabel">GALAXY T5</h5>
+                                            <h5 class="modal-title" id="exampleModalLabel">NITMO G7</h5>
                                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                         </div>
 
                                         <div class="modal-body">
-                                            <img src="~/images/Laptop/GALAXY T5-SPECS.png" class="img-fluid" />
+                                            <img src="~/images/Laptop/NITMO G7-Specs.png" class="img-fluid" />
 
                                         </div>
 
@@ -201,10 +165,11 @@
                             <a class="text-dark fw-bold" asp-area="" asp-page="/MyPages/ViewImage/Laptop/WolfSpeed">
                             <img src="~/images/Laptop/WOLF SPEED.png" class="img-fluid mb-3 shadow product-size" />
                             </a>
+                        <p class="Lead fw-bold my-2">&#8369; 62,999.00</p>
                             <!-- Button trigger modal -->
                             <div class="row justify-content-between px-2 py-2">
 
-                                    <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                    <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#exampleModal4">
                                         View Specs
                                     </button>
 
@@ -216,16 +181,16 @@
                             </div>
 
                             <!-- Modal -->
-                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal fade" id="exampleModal4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                                 <div class="modal-dialog modal-dialog-scrollable">
                                     <div class="modal-content">
                                         <div class="modal-header">
-                                            <h5 class="modal-title" id="exampleModalLabel">GALAXY T5</h5>
+                                            <h5 class="modal-title" id="exampleModalLabel">WOLF SPEED</h5>
                                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                         </div>
 
                                         <div class="modal-body">
-                                            <img src="~/images/Laptop/GALAXY T5-SPECS.png" class="img-fluid" />
+                                            <img src="~/images/Laptop/WOLF SPEED-Specs.png" class="img-fluid" />
 
                                         </div>
 
