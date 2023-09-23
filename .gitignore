@@ -361,3 +361,5 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
+/Labajo_WebApp/Labajo_WebApp.csproj
+/Labajo_WebApp/Labajo_WebApp.csproj
