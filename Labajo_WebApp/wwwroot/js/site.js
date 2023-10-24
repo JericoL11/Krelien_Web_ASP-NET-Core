@@ -23,4 +23,6 @@ function search() {
     }
 }
 
-
+function RegisterMessage(message) {
+    alert("Successfully Registered");
+}

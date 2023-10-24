@@ -1,7 +1,12 @@
+﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.DependencyInjection;
+using Labajo_WebApp.Data;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddRazorPages();
+builder.Services.AddDbContext<Labajo_WebAppContext>(options =>
+    options.UseSqlServer(builder.Configuration.GetConnectionString("Labajo_WebAppContext") ?? throw new InvalidOperationException("Connection string 'Labajo_WebAppContext' not found.")));
 
 var app = builder.Build();
 

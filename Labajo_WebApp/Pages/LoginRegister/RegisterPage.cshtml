@@ -1,0 +1,49 @@
+﻿@page
+@model Labajo_WebApp.Pages.LoginRegister.RegisterPageModel
+@{
+}
+
+
+
+
+<div class="row justify-content-center">
+    <div class="col-md-4 shadow p-5">
+        <form method="post" class="">
+            <h4>Register</h4>
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="CrudModels.FirstName" class="control-label"></label>
+                <input asp-for="CrudModels.FirstName" class="form-control" />
+                <span asp-validation-for="CrudModels.FirstName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CrudModels.LastName" class="control-label"></label>
+                <input asp-for="CrudModels.LastName" class="form-control" />
+                <span asp-validation-for="CrudModels.LastName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CrudModels.Username" class="control-label"></label>
+                <input asp-for="CrudModels.Username" class="form-control" />
+                <span asp-validation-for="CrudModels.Username" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CrudModels.Password" class="control-label"></label>
+                <input asp-for="CrudModels.Password" class="form-control" />
+                <span asp-validation-for="CrudModels.Password" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CrudModels.confirm_Password" class="control-label"></label>
+                <input asp-for="CrudModels.confirm_Password" class="form-control" />
+                <span asp-validation-for="CrudModels.confirm_Password" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CrudModels.BirthDate" class="control-label"></label>
+                <input asp-for="CrudModels.BirthDate" class="form-control" />
+                <span asp-validation-for="CrudModels.BirthDate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Register" class="btn btn-primary mt-5"/>
+            </div>
+        </form>
+    </div>
+</div>

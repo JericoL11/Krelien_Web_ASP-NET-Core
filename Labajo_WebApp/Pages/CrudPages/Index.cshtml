@@ -1,0 +1,67 @@
+﻿@page
+@model Labajo_WebApp.Pages.CrudPages.IndexModel
+
+@{
+    Layout = "_LayoutCrud";
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-page="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.CrudModels[0].FirstName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CrudModels[0].LastName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CrudModels[0].Username)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CrudModels[0].Password)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CrudModels[0].confirm_Password)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CrudModels[0].BirthDate)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model.CrudModels) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.FirstName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.LastName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Username)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Password)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.confirm_Password)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.BirthDate)
+            </td>
+            <td>
+                <a asp-page="./Edit" asp-route-id="@item.id">Edit</a> |
+                <a asp-page="./Details" asp-route-id="@item.id">Details</a> |
+                <a asp-page="./Delete" asp-route-id="@item.id">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
